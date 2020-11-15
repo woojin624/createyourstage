@@ -14,12 +14,14 @@
 // if (ratio > 1) {
 //   window.location.href = "./index_m.html";
 // }
+let mobile = false;
 console.log("dsa");
 var uAgent = navigator.userAgent.toLowerCase();
 // 아래는 모바일 장치들의 모바일 페이지 접속을위한 스크립트
 var mobilePhones = new Array("iphone", "ipod", "ipad", "android", "blackberry", "windows ce", "nokia", "webos", "opera mini", "sonyericsson", "opera mobi", "iemobile");
 for (var i = 0; i < mobilePhones.length; i++) {
-  if (uAgent.indexOf(mobilePhones[i]) != -1) {
+  if (uAgent.indexOf(mobilePhones[i]) != -1 && mobile == false) {
+    mobile = true;
     console.log("asd");
     location.href = "./index_m.html";
   }
