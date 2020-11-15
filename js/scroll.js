@@ -87,9 +87,9 @@ let vh = window.innerHeight;
 let halfVh = window.innerHeight / 2;
 
 // 페이지 로딩되기 직전 스크롤 맨위로
-// window.onbeforeunload = function () {
-//     window.scrollTo(0, 0);
-// };
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
 
 /* 비디오 컨트롤 */
 videoWrap.addEventListener("click", (e) => {
