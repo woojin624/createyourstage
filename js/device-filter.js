@@ -1,24 +1,26 @@
 // const filter = "win16|win32|win64|mac|macintel";
 // if (navigator.platform) {
-//     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
-//         //mobile
-//         console.log("mobile 접속");
-//         // location.href = "./index_m.html";
-//     } else {
-//         //pc
-//         console.log("pc 접속");
-//         // location.href = './index.html';
-//     }
+//   if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+//     //mobile
+//     console.log("mobile 접속");
+//     // location.href = "./index_m.html";
+//   } else {
+//     //pc
+//     console.log("pc 접속");
+//     // location.href = "./index.html";
+//   }
 // }
-console.log("page-load");
-var mobileKeyWords = new Array("iPad", "iPhone", "iPod", "BlackBerry", "Android", "Windows CE", "LG", "MOT", "SAMSUNG", "SonyEricsson");
-
-for (var word in mobileKeyWords) {
-    if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
-        if (getCookie("VIEW_TYPE") == "PC") {
-            location.href = "/index.html"; // PC용 페이지
-        } else {
-            location.href = "/index_m.html"; // 모바일용 페지지
-        }
-    }
+// var ratio = window.devicePixelRatio;
+// if (ratio > 1) {
+//   window.location.href = "./index_m.html";
+// }
+console.log("dsa");
+var uAgent = navigator.userAgent.toLowerCase();
+// 아래는 모바일 장치들의 모바일 페이지 접속을위한 스크립트
+var mobilePhones = new Array("iphone", "ipod", "ipad", "android", "blackberry", "windows ce", "nokia", "webos", "opera mini", "sonyericsson", "opera mobi", "iemobile");
+for (var i = 0; i < mobilePhones.length; i++) {
+  if (uAgent.indexOf(mobilePhones[i]) != -1) {
+    console.log("asd");
+    location.href = "./index_m.html";
+  }
 }
