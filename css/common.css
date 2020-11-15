@@ -1,0 +1,29 @@
+div.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+    width: 8px;
+    padding: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.29);
+}
+/* 스크롤바의 width */
+::-webkit-scrollbar-track {
+    background-color: #efffd791;
+    box-shadow: inset 0px 0px 2px rgba(149, 255, 0, 0.392);
+    border-radius: 3px;
+}
+/* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb {
+    background: #96ff00;
+    border-radius: 3px;
+}
+/* 스크롤바 색 */
+::-webkit-scrollbar-button {
+    display: none;
+}
+/* 위 아래 버튼 (버튼 없애기를 함) */

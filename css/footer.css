@@ -1,0 +1,58 @@
+footer {
+    background-color: var(--off-stage);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+footer {
+    background: radial-gradient(circle at 120% 160%, #8a11ff, #242528, #242528);
+}
+footer > div.gradient-green {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at 82% -110%, #96ff0080, #00000000, #00000000);
+}
+
+footer > ul {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+footer > ul > li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+footer > ul > li > h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+div.member-wrap {
+    display: flex;
+}
+div.member-1 > h5,
+div.member-wrap > div > h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+div.member-1 > p,
+div.member-wrap > div > p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.4em;
+}
+div.member-2,
+div.member-4 {
+    margin-right: 100px;
+}

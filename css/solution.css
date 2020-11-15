@@ -1,0 +1,176 @@
+article.solution {
+    width: 100%;
+}
+div.solution-wrap {
+    max-width: 1400px;
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+}
+
+div.solution-tx {
+    display: flex;
+    align-items: center;
+}
+div.solution-tx > h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 100px;
+}
+div.solution-tx > p > span {
+    font-weight: 700;
+}
+
+div.sol-cir-wrap {
+    width: fit-content;
+    border: 1px solid var(--main-violet-c);
+    display: flex;
+    align-items: center;
+    border-radius: 135px;
+    margin: 0 auto;
+    margin-top: 120px;
+    position: relative;
+}
+
+div.sol-cir-wrap > div.arrow {
+    width: 18px;
+    height: 15px;
+    background-color: var(--main-violet-c);
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.sol-cir-wrap > div.arrow:first-child {
+    top: 0;
+    left: 25%;
+    transform: translateY(-50%) rotate(90deg);
+}
+div.sol-cir-wrap > div.arrow:nth-child(2) {
+    top: 0;
+    left: 62%;
+    transform: translateY(-50%) rotate(90deg);
+}
+div.sol-cir-wrap > div.arrow:nth-child(3) {
+    top: 100%;
+    left: 75%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+div.sol-cir-wrap > div.arrow:nth-child(4) {
+    top: 100%;
+    left: 38%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+div.sol-main {
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    border: 2px dotted var(--main-violet-c);
+    position: relative;
+    margin-right: 20px;
+}
+
+div.sol-main-in {
+    height: 230px;
+    width: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-violet-c);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.sol-main-in > h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--back-stage);
+}
+
+ul.sol-sub {
+    display: flex;
+}
+ul.sol-sub > li {
+    width: 230px;
+    height: 230px;
+    border: 1px solid var(--off-stage);
+    border-radius: 100%;
+    margin-right: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul.sol-sub > li:last-child {
+    margin: 0;
+    margin-right: 20px;
+}
+ul.sol-sub > li > h4 {
+    color: var(--main-violet-c);
+    font-weight: 700;
+}
+ul.sol-sub > li > span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.7em;
+}
+
+div.effects-wrap {
+    max-width: 1400px;
+    width: 100%;
+    height: 45vh;
+    margin: 0 auto;
+}
+div.effects-wrap > h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 100px;
+}
+div.effects-wrap > div.effects-num {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+div.effects-wrap > div.effects-num > ul {
+    display: flex;
+}
+div.effects-wrap > div.effects-num > ul.num-one-two,
+div.effects-wrap > div.effects-num > ul.num-three-four {
+    display: flex;
+}
+div.effects-wrap > div.effects-num > ul > li {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+div.effects-wrap > div.effects-num > ul > li > p {
+    font-size: 28px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+div.effects-wrap > div.effects-num > ul > li:hover > p {
+    color: var(--main-violet-c);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--main-violet-c);
+    cursor: pointer;
+}
+div.effects-wrap > div.effects-num > ul > li > div.num {
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-violet-c);
+    color: var(--back-stage);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 40px;
+}
+
+div.wireframe {width: 100%; display: flex; justify-content: center; margin-bottom: -50vh;}
+div.wireframe > img{width: 80%;}

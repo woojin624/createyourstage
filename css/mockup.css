@@ -1,0 +1,25 @@
+section.mockup {width: 100vw;}
+
+/* goods */
+article.goods {width: 100vw;}
+article.goods > img {width: 100%; display: block;}
+
+/* device */
+article.device { width: 100vw; background-color: var(--off-stage); display: flex; flex-direction: column; align-items: center; padding-bottom: 200px;}
+article.device > h2 { font-size: 32px; font-weight: 500; color: var(--back-stage); line-height: 1.4; text-align: center;}
+article.device > img {width: 100%;}
+article.device > p {margin-top: 50px; font-size: 24px; color: var(--back-stage); line-height: 1.4; text-align: center;}
+
+/* ticket */
+article.ticket {width: 100vw; height: 80vh; display: flex; justify-content: center; align-items: center; background-color: #242528;}
+article.ticket > img {width: 70%;}
+
+/* video */
+article.mockup-video {width: 100vw; height: 100vh; min-height: 720px; display: flex; justify-content: center; align-items: center; background-color: #242528;}
+article.mockup-video > div.imac-wrap {position: relative; width: 70vw;}
+article.mockup-video > div.imac-wrap > img {position: relative; width: 70vw; z-index:2;}
+article.mockup-video > div.imac-wrap > video {position: absolute; top: 5%; left: 0%; width: 100%; z-index:1;}
+
+/* subway */
+article.subway {width: 100vw; height: 100vh; background: url('../img/subway-mockup.png') no-repeat center/cover;}
+article.subway > img {width: 100vw; }

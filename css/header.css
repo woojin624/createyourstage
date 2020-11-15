@@ -1,0 +1,77 @@
+header {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    transition: 0.4s;
+    background-color: #8c11ff00;
+}
+header.on {
+    position: fixed;
+    background-color: var(--main-violet);
+}
+header > nav.nav-bar {
+    position: relative;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: cetner;
+    transition: 0.4s;
+    padding: 26px 0px 26px 0px;
+}
+header.on > nav.nav-bar {
+    padding: 14px 0px 14px 0px;
+}
+header > nav.nav-bar > h1 {
+    cursor: pointer;
+}
+header > nav.nav-bar > h1 > img {
+    width: 70px;
+}
+header > nav.nav-bar > ul {
+    display: flex;
+    align-items: center;
+}
+header > nav.nav-bar > ul > li {
+    font-size: 16px;
+    margin-right: 56px;
+    color: rgba(255, 255, 255, 0.303);
+    cursor: pointer;
+    letter-spacing: 0.15rem;
+    padding: 5px 0;
+    transition: 0.4s;
+}
+nav.nav-bar > ul > li.active {
+    color: #fff;
+}
+nav.nav-bar > ul > li.mode-selector {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 0px;
+    padding: 3px;
+    background-color: var(--main-green);
+    position: relative;
+}
+nav.nav-bar > ul > li.mode-selector > div.mode-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: var(--back-stage);
+    position: relative;
+    transition: 0.3s;
+    left: 0;
+    border: 1px solid #9e9e9e50;
+}
+header > nav.nav-bar > ul > li.mode-selector > div.mode-circle.dark {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: var(--back-stage);
+    position: relative;
+    transition: 0.3s;
+    left: 30px;
+}
