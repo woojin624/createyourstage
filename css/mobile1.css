@@ -146,6 +146,7 @@ section.youtube-state {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: auto;
 }
 section.youtube-state > h1 {
     font-size: 35px;
